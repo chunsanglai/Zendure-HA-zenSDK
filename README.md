@@ -23,6 +23,7 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 | `<IP-BATTERIJ>`      | In de Zendure app onder **Device Information** |
 | `<SERIAL-2400AC>`    | In de Zendure app onder **Device Information**  |
 | `<IP-HOMEWIZARD-P1>` | In de Homewizard app (lokale API **aanzetten**) |
+| `<NORDPOOL>         ` | Optioneel de eniteit van Nordpool toevoegen |
 
 ---
 
