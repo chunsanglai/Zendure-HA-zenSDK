@@ -31,7 +31,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
 3. **Herstart Home Assistant**
 
-Na herstarten zie je onder integraties iets zoals dit verschijnen:
+Na herstarten zie je onder integraties het onderstaande verschijnen.
 
 ![Integraties screenshot](https://tweakers.net/i/E7bxQrCWwNpk4ZDFy1JQ9ITlLVE=/fit-in/4000x4000/filters:no_upscale():strip_exif()/f/image/UXu36CdUJ1KpqALNx5mSgJcP.png?f=user_large)
 
