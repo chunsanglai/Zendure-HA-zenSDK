@@ -6,7 +6,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 ---
 
-## 📦 (1/3) Entiteiten configuratie in de configuration.yaml
+### 📦 (1/3) Entiteiten configuratie in de configuration.yaml
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
@@ -59,7 +59,7 @@ Als je sensoren ziet maar geen `rest_commands`:
 
 ---
 
-## 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
+### 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
 
 De motor van alles. Deze automatisering zorgt voor:
 
@@ -75,7 +75,7 @@ De motor van alles. Deze automatisering zorgt voor:
 
 ---
 
-## 🔋 (3/3) Batterij laten werken
+### 🔋 (3/3) Batterij laten werken
 
 Nu alles staat:
 
