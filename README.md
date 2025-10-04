@@ -1,6 +1,6 @@
 ## Zendure zenSDK (100% lokaal)
 
-Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. 
+Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de batterij 100% lokaal in eigen beheer wilt zonder updates van derden.
 
 ![Preview](Images/NOM.gif)
 
@@ -75,8 +75,6 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 ---
 
 ### 🔋 (3/3) Batterij laten werken
-
-Nu alles staat:
 
 1. Voeg de entiteit **Zendure 2400 AC Modus Selecteren** toe aan je dashboard
 2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
