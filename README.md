@@ -36,8 +36,6 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 
 ![Preview](Images/Rest1.avif)
 
-#### Beschikbare entiteiten
-
 ![Preview](Images/Rest2.avif) 
 
 ---
