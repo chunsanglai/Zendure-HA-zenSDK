@@ -6,7 +6,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 ---
 
-## 🛠️ (1/3) Sensoren aanmaken via `configuration.yaml`
+## 📦 (1/3) Entiteiten configuratie in de configuration.yaml
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
