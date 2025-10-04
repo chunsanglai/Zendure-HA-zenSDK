@@ -33,11 +33,11 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 Na herstarten zie je onder integraties het onderstaande verschijnen.
 
-![Integraties screenshot](https://tweakers.net/i/E7bxQrCWwNpk4ZDFy1JQ9ITlLVE=/fit-in/4000x4000/filters:no_upscale():strip_exif()/f/image/UXu36CdUJ1KpqALNx5mSgJcP.png?f=user_large)
+![Preview](Images/Rest1.avif)
 
 #### Beschikbare entiteiten
 
-![Beschikbare entiteiten](https://tweakers.net/i/kDfTMKTEIfmvs-lswXC8JOUIGYI=/800x/filters:strip_icc():strip_exif()/f/image/ybYjJIurZDrRxGMWhmq1Psby.jpg?f=fotoalbum_large)  
+![Preview](Images/Rest2.avif) 
 
 ---
 
