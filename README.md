@@ -18,7 +18,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 | Variabele            | Waar te vinden                                 |
 |----------------------|------------------------------------------------|
 | `<IP-BATTERIJ>`      | In de Zendure app onder **Device Information** |
-| `<SERIAL-2400AC>`    | In de app of via `properties` link hierboven  |
+| `<SERIAL-2400AC>`    | In de Zendure app onder **Device Information**  |
 | `<IP-HOMEWIZARD-P1>` | In de Homewizard app (lokale API **aanzetten**) |
 
 ---
