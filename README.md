@@ -80,11 +80,7 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot Ã
 2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
 3. De modus zal op **Standby** staan
 4. Kies hier je gewenste modus om de **Zendure zenSDK (Gielz) automatisering** te activeren
+5. De batterij zal nu aan de slag gaan
 
 ![Preview](Images/Modus.gif) 
 
----
-
-## âœ… Klaar!
-
-Je hebt nu een lokaal werkende integratie van je Zendure 2400 AC batterij met Home Assistant via zenSDK.
