@@ -1,4 +1,4 @@
-## Zendure zenSDK (100% lokaal)
+## Zendure zenSDK (Home Assistant)
 
 Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de batterij 100% lokaal in eigen beheer wilt zonder updates van derden.
 
