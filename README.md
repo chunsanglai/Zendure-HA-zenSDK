@@ -2,7 +2,7 @@
 
 Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. 
 
-![Preview](Images/NOM.png)
+![Preview](Images/NOM.gif)
 
 ---
 
@@ -50,7 +50,7 @@ Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Z
 
 2. Daarna kun je **Stop met alles** uitvoeren
 
-![Ontwikkel screenshot](https://tweakers.net/i/JxXs0t_MueIsdCrf_szwqhRYaHw=/800x/filters:strip_exif()/f/image/8Eh4Sb8T2h2sj23qvkg3NOHx.png?f=fotoalbum_large)  
+![Preview](Images/Restcommand1.avif)
 
 ##### YAML niet goed ingeladen?
 
@@ -60,11 +60,7 @@ Als je sensoren ziet maar geen `rest_commands`:
 ---
 
 ### 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
-
-De motor van alles. Deze automatisering zorgt voor:
-
-- Slim laden en ontladen
-- Automatische interactie met zonneopbrengst en netverbruik
+De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot één geheel. Heb je bij het bovenstaande geen namen aangepast dan is het een kwestie van een nieuwe automatisering aanmaken en rechtsboven op bewerken in YAML aan te klikken. Copy en paste en opslaan met deze naam en start daarna de automatisering;
 
 #### Automatisering toevoegen
 
@@ -72,6 +68,10 @@ De motor van alles. Deze automatisering zorgt voor:
 2. Klik rechtsboven op **Bewerken in YAML**
 3. Plak de YAML-code (zie aparte sectie of bestand)
 4. Geef het een naam, sla op, en start de automatisering
+
+![Preview](Images/Automation1.gif)   
+
+![Preview](Images/Automation2.gif) 
 
 ---
 
@@ -83,6 +83,8 @@ Nu alles staat:
 2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
 3. De modus zal op **Standby** staan
 4. Kies hier je gewenste modus om de **Zendure zenSDK (Gielz) automatisering** te activeren
+
+![Preview](Images/Modus.gif) 
 
 ---
 
