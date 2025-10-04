@@ -1,6 +1,6 @@
 # Zendure zenSDK (100% lokaal)
 
-Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. 
+Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. 
 
 ![Preview](Images/NOM.png)
 
