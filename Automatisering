@@ -1,6 +1,9 @@
 alias: Zendure zenSDK (Gielz)
-description: Versie 20250916
+description: Versie 20251004
 triggers:
+  - at: "00:00:00"
+    trigger: time
+    id: middernacht_trigger
   - seconds: /4
     trigger: time_pattern
   - entity_id:
@@ -110,12 +113,46 @@ actions:
             data: {}
         alias: Wanneer opslag modus op Flash staat deze op RAM instellen
       - conditions:
+          - condition: trigger
+            id: middernacht_trigger
+        sequence:
+          - alias: Zet goedkoopste periode van morgen naar vandaag
+            target:
+              entity_id: input_number.dynamisch_goedkoopste_x_periode
+            data:
+              value: >-
+                {{ states('input_number.dynamisch_goedkoopste_x_periode_morgen')
+                | float }}
+            action: input_number.set_value
+          - alias: Zet duurste periode van morgen naar vandaag
+            target:
+              entity_id: input_number.dynamisch_duurste_x_periode
+            data:
+              value: >-
+                {{ states('input_number.dynamisch_duurste_x_periode_morgen') |
+                float }}
+            action: input_number.set_value
+          - alias: Zet handmatige periode van morgen naar vandaag
+            target:
+              entity_id: input_text.dynamisch_handmatige_periode
+            data:
+              value: "{{ states('input_text.dynamisch_handmatige_periode_morgen') }}"
+            action: input_text.set_value
+          - alias: Reset handmatige periode van morgen
+            target:
+              entity_id: input_text.dynamisch_handmatige_periode_morgen
+            data:
+              value: ""
+            action: input_text.set_value
+        alias: Dynamisch omzetten van morgen naar vandaag
+      - conditions:
           - condition: numeric_state
             entity_id: sensor.p1_aansturing_api_v1
             above: 100
-          - condition: numeric_state
-            entity_id: sensor.zendure_2400_ac_laadpercentage
-            above: 10
+          - condition: template
+            value_template: |
+              {{ states('sensor.zendure_2400_ac_laadpercentage') | float >
+               states('sensor.zendure_2400_ac_minimale_laadpercentage') | float }}
           - condition: numeric_state
             entity_id: sensor.zendure_2400_ac_vermogen_aansturing
             above: -30
@@ -150,9 +187,10 @@ actions:
             action: rest_command.zendure_x_ontladen
         alias: Start met ontladen bij +100 watt (75% van de vraag)
       - conditions:
-          - condition: numeric_state
-            entity_id: sensor.zendure_2400_ac_laadpercentage
-            above: 10
+          - condition: template
+            value_template: |
+              {{ states('sensor.zendure_2400_ac_laadpercentage') | float >
+               states('sensor.zendure_2400_ac_minimale_laadpercentage') | float }}
           - condition: template
             value_template: >-
               {% set factor = 1.00 %} {% set cap = 2400 %} {% set correctie = -2
