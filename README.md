@@ -10,6 +10,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
+Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA). Hiervoor heb ik een bijna plug-n-play Configuration.yaml gemaakt.
 #### Benodigde hardware
 
 - Homewizard P1 (of een andere P1-meter die data per seconde levert)
