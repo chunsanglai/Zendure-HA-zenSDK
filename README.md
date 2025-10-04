@@ -1,4 +1,4 @@
-# Zendure zenSDK (100% lokaal)
+## Zendure zenSDK (100% lokaal)
 
 Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. 
 
@@ -10,12 +10,12 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
-### Benodigde hardware
+#### Benodigde hardware
 
 - Homewizard P1 (of een andere P1-meter die data per seconde levert)
 - Zendure Solarflow 2400 AC  
 
-### Vereiste gegevens
+#### Vereiste gegevens
 
 | Variabele            | Waar te vinden                                 |
 |----------------------|------------------------------------------------|
@@ -25,7 +25,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 ---
 
-### Configuratie en herstart
+#### Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
 2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
@@ -35,13 +35,13 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 
 ![Integraties screenshot](https://tweakers.net/i/E7bxQrCWwNpk4ZDFy1JQ9ITlLVE=/fit-in/4000x4000/filters:no_upscale():strip_exif()/f/image/UXu36CdUJ1KpqALNx5mSgJcP.png?f=user_large)
 
-### Beschikbare entiteiten
+#### Beschikbare entiteiten
 
 ![Beschikbare entiteiten](https://tweakers.net/i/kDfTMKTEIfmvs-lswXC8JOUIGYI=/800x/filters:strip_icc():strip_exif()/f/image/ybYjJIurZDrRxGMWhmq1Psby.jpg?f=fotoalbum_large)  
 
 ---
 
-### Testen
+#### Testen
 
 Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Zendure`.
 
@@ -52,7 +52,7 @@ Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Z
 
 ![Ontwikkel screenshot](https://tweakers.net/i/JxXs0t_MueIsdCrf_szwqhRYaHw=/800x/filters:strip_exif()/f/image/8Eh4Sb8T2h2sj23qvkg3NOHx.png?f=fotoalbum_large)  
 
-#### YAML niet goed ingeladen?
+##### YAML niet goed ingeladen?
 
 Als je sensoren ziet maar geen `rest_commands`:  
 > 🔁 Bug in Home Assistant – herstart meerdere keren totdat alles goed ingeladen is.
@@ -66,7 +66,7 @@ De motor van alles. Deze automatisering zorgt voor:
 - Slim laden en ontladen
 - Automatische interactie met zonneopbrengst en netverbruik
 
-### Automatisering toevoegen
+#### Automatisering toevoegen
 
 1. Maak een nieuwe automatisering aan
 2. Klik rechtsboven op **Bewerken in YAML**
