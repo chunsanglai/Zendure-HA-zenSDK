@@ -1,7 +1,7 @@
 alias: Zendure zenSDK (Gielz)
 description: Versie 20251004
 triggers:
-  - at: "16:46:00"
+  - at: "00:00:00"
     trigger: time
     id: middernacht_trigger
   - seconds: /4
