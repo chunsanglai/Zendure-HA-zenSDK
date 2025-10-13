@@ -27,7 +27,7 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 
 ---
 
-#### Configuratie en herstart
+### 📦 (1a/3) Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
 2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
@@ -42,7 +42,7 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 
 ---
 
-#### Testen
+### 📦 (1b/3) Testen
 
 Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Zendure`.
 
@@ -86,3 +86,10 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 ![Preview](Images/Modus.gif) 
 
+---
+
+### 🔋 (Optioneel) Nordpool
+Wanneer je ook het Dynamisch Nordpool gedeelte in gebruik gaat nemen moet je voor dat je deze in gebruik neemt bij input_text.dynamisch_handmatige_periode en
+input_text.dynamisch_handmatige_periode_morgen even unknown weghalen. Hierna zal het dynamisch gedeelte werken. Alles wat in de forecast gezet word zal overgenomen worden om 00:00 via de automatisering.
+
+Dynamisch Goedkoopste Periode en Dynamisch Duurste Periode geven JA en NEE aan. deze kun je vervolgens in je eigen automatisering gebruiken waarmee je de modus van de batterij veranderd.
