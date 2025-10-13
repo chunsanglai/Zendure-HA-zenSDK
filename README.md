@@ -73,8 +73,8 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot Ã
 
 1. Maak een nieuwe automatisering aan
 2. Klik rechtsboven op **Bewerken in YAML**
-3. Plak de YAML-code (zie aparte sectie of bestand)
-4. Geef het een naam, sla op, en start de automatisering
+3. Plak de YAML-code (zie automatisering bestand)
+4. Sla op, en start de automatisering
 
 ![Preview](Images/Automation1.gif)   
 
