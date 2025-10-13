@@ -1,6 +1,6 @@
 # 🔋 Zendure - Home Assistant - zenSDK
 
-Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK) voor Home Assistant. Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de batterij 100% lokaal in eigen beheer wilt zonder updates van derden en netjes in Home Assistant.
+Gebaseerd op de [zenSDK RESTful API](https://github.com/Zendure/zenSDK) voor Home Assistant. Deze setup maakt lokaal verbinding met **één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (zonder zonnepanelen)** zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de thuisbatterij 100% lokaal in eigen beheer wilt zonder updates van derden en netjes in Home Assistant. Zoveel mogelijk plug-n-play om in 3 stappen de batterij werkend te krijgen in Home Assistant.
 
 Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje koffie ☕️ – ik codeer beter met cafeïne!
 
@@ -12,7 +12,7 @@ Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje ko
 
 ![Preview](Images/NOM.gif)
 
-## 📦 (1/3) Configuratie van configuration.yaml
+## 📦 (1/3) Configuration.yaml
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
@@ -64,7 +64,7 @@ Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Z
 Als je sensoren ziet maar geen `rest_commands`:  
 > 🔁 Bug in Home Assistant – herstart meerdere keren totdat alles goed ingeladen is.
 
-
+<br><br>
 
 ## 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
 De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot één geheel. Heb je bij het bovenstaande geen namen aangepast dan is het een kwestie van een nieuwe automatisering aanmaken en rechtsboven op bewerken in YAML aan te klikken. Copy en paste en opslaan met deze naam en start daarna de automatisering;
@@ -80,8 +80,9 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 ![Preview](Images/Automation2.gif) 
 
+<br><br>
 
-## 🔋 (3/3) Batterij laten werken
+## 🔋 (3/3) Batterij mag aan de slag
 
 1. Voeg de entiteit **Zendure 2400 AC Modus Selecteren** toe aan je dashboard
 2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
@@ -91,7 +92,7 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 ![Preview](Images/Modus.gif) 
 
-
+<br><br>
 
 ## 💶 (Optioneel) Nordpool
 Wanneer je ook het Dynamisch Nordpool gedeelte in gebruik gaat nemen moet je voor dat je deze in gebruik neemt bij input_text.dynamisch_handmatige_periode en
