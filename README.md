@@ -4,10 +4,9 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje koffie ☕️ – ik codeer beter met cafeïne!
 
-[![Buy Me a Coffee][buymecoffeebadge]][buymecoffee]
-
-[buymecoffee]: https://www.buymeacoffee.com/gielz
-[buymecoffeebadge]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
+<a href="https://www.buymeacoffee.com/gielz" target="_blank">
+  <img src="https://github.com/Gielz1986/Zendure-zenSDK-HA/blob/main/Images/qr-code.png?raw=true" width="150" alt="Buy Me a Coffee">
+</a><br><br>
 
 
 
