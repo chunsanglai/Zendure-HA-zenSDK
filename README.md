@@ -10,9 +10,9 @@ Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje ko
   <img src="https://github.com/Gielz1986/Zendure-zenSDK-HA/blob/main/Images/qr-code.png?raw=true" width="150" alt="Buy Me a Coffee">
 </a><br><br>
 
-## 📦 (1/3) Configuration.yaml
+## 1️⃣ Configuration.yaml
 
-> ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
+> ⚠️ Let op: Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
 Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA). Hiervoor heb ik een bijna plug-n-play Configuration.yaml gemaakt.
 #### Benodigde hardware
@@ -31,7 +31,7 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 
 ---
 
-### 📦 (1a/3) Configuratie en herstart
+### #️⃣ Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
 2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
@@ -46,7 +46,7 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 
 ---
 
-### 📦 (1b/3) Testen
+### #️⃣ Testen
 
 Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Zendure`.
 
@@ -64,7 +64,7 @@ Als je sensoren ziet maar geen `rest_commands`:
 
 <br><br>
 
-## 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
+## 2️⃣ Zendure zenSDK (Gielz) automatisering
 De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot één geheel. Heb je bij het bovenstaande geen namen aangepast dan is het een kwestie van een nieuwe automatisering aanmaken en rechtsboven op bewerken in YAML aan te klikken. Copy en paste en opslaan met deze naam en start daarna de automatisering;
 
 #### Automatisering toevoegen
@@ -80,7 +80,7 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 <br><br>
 
-## 🔋 (3/3) Batterij mag aan de slag
+## 3️⃣ Batterij mag aan de slag
 
 1. Voeg de entiteit **Zendure 2400 AC Modus Selecteren** toe aan je dashboard
 2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
@@ -92,7 +92,7 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 <br><br>
 
-## 💶 (Optioneel) Nordpool
+## 🔃 (Optioneel) Nordpool
 Wanneer je ook het Dynamisch Nordpool gedeelte in gebruik gaat nemen moet je voor dat je deze in gebruik neemt bij input_text.dynamisch_handmatige_periode en
 input_text.dynamisch_handmatige_periode_morgen even unknown weghalen. Hierna zal het dynamisch gedeelte werken. Alles wat in de forecast gezet word zal overgenomen worden om 00:00 via de automatisering.
 
