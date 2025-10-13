@@ -4,9 +4,8 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 ![Preview](Images/NOM.gif)
 
----
 
-### 📦 (1/3) Entiteiten configuratie in de configuration.yaml
+## 📦 (1/3) Entiteiten configuratie in de configuration.yaml
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
@@ -25,9 +24,8 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 | `<IP-HOMEWIZARD-P1>` | In de Homewizard app (lokale API **aanzetten**) |
 | `<NORDPOOL>         ` | Optioneel de eniteit van Nordpool toevoegen |
 
----
 
-### 📦 (1a/3) Configuratie en herstart
+## 📦 (1a/3) Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
 2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
@@ -40,9 +38,9 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 *Zelf toe te voegen entiteiten op een dashboard.
 ![Preview](Images/Rest2.png) 
 
----
 
-### 📦 (1b/3) Testen
+
+## 📦 (1b/3) Testen
 
 Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Zendure`.
 
@@ -58,9 +56,9 @@ Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Z
 Als je sensoren ziet maar geen `rest_commands`:  
 > 🔁 Bug in Home Assistant – herstart meerdere keren totdat alles goed ingeladen is.
 
----
 
-### 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
+
+## 🤖 (2/3) Zendure zenSDK (Gielz) automatisering
 De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot één geheel. Heb je bij het bovenstaande geen namen aangepast dan is het een kwestie van een nieuwe automatisering aanmaken en rechtsboven op bewerken in YAML aan te klikken. Copy en paste en opslaan met deze naam en start daarna de automatisering;
 
 #### Automatisering toevoegen
@@ -74,9 +72,8 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 ![Preview](Images/Automation2.gif) 
 
----
 
-### 🔋 (3/3) Batterij laten werken
+## 🔋 (3/3) Batterij laten werken
 
 1. Voeg de entiteit **Zendure 2400 AC Modus Selecteren** toe aan je dashboard
 2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
@@ -86,9 +83,9 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 ![Preview](Images/Modus.gif) 
 
----
 
-### 💶 (Optioneel) Nordpool
+
+## 💶 (Optioneel) Nordpool
 Wanneer je ook het Dynamisch Nordpool gedeelte in gebruik gaat nemen moet je voor dat je deze in gebruik neemt bij input_text.dynamisch_handmatige_periode en
 input_text.dynamisch_handmatige_periode_morgen even unknown weghalen. Hierna zal het dynamisch gedeelte werken. Alles wat in de forecast gezet word zal overgenomen worden om 00:00 via de automatisering.
 
