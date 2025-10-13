@@ -65,8 +65,6 @@ Als je sensoren ziet maar geen **rest_commands**:
 ## 2️⃣ Zendure zenSDK (Gielz) automatisering
 De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot één geheel. Heb je bij het bovenstaande geen namen aangepast dan is het een kwestie van een nieuwe automatisering aanmaken.
 
-#### Automatisering toevoegen
-
 1. Maak een nieuwe automatisering aan
 2. Klik rechtsboven op **Bewerken in YAML**
 3. Plak de YAML-code `(zie automatisering bestand)`
