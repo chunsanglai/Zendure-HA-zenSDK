@@ -53,7 +53,7 @@ Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar **
 
 2. Daarna kun je **Stop met alles** uitvoeren
 
-![Preview](Images/Restcommand1.gift)
+![Preview](Images/Restcommand1.gif)
 
 ##### YAML niet goed ingeladen?
 
