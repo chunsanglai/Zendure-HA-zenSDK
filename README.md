@@ -1,8 +1,7 @@
 # 🔋 Zendure - Home Assistant - zenSDK
+**Zoveel mogelijk plug-n-play om in 3️⃣ stappen de batterij werkend te krijgen in Home Assistant**.
 
-Gebaseerd op de [zenSDK RESTful API](https://github.com/Zendure/zenSDK) voor Home Assistant. Deze setup maakt lokaal verbinding met **één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (zonder zonnepanelen)** zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de thuisbatterij 100% lokaal in eigen beheer wilt zonder updates van derden en netjes in Home Assistant. **Zoveel mogelijk plug-n-play om in 3 stappen de batterij werkend te krijgen in Home Assistant**.
-
-![Preview](Images/NOM.png)
+Gebaseerd op de [zenSDK RESTful API](https://github.com/Zendure/zenSDK) voor Home Assistant. Deze setup maakt lokaal verbinding met **één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (geen aangesloten zonnepanelen)** zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de thuisbatterij 100% lokaal in eigen beheer wilt zonder updates van derden en netjes in Home Assistant.
 
 Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje koffie ☕️ – ik codeer beter met cafeïne!
 
@@ -34,7 +33,7 @@ Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA).
 ### #️⃣ Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
-2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de github variant en vervang de **vereiste gegevens** zoals hierboven aangegeven.
+2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de Github `configuration.yaml` en vervang de **vereiste gegevens** zoals hierboven aangegeven.
 3. Herstart Home Assistant
 4. Na herstarten zie je onder integraties het onderstaande verschijnen.
 
@@ -49,12 +48,12 @@ Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA).
 
 Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar **Zendure**.
 
-1. Voer **Snel ontladen** uit  
+1. Voer **Snel opladen** uit  
    > ⚠️ Let op: 2400 watt. Respecteert ingestelde limieten uit de app.
 
 2. Daarna kun je **Stop met alles** uitvoeren
 
-![Preview](Images/Restcommand1.avif)
+![Preview](Images/Restcommand1.gift)
 
 ##### YAML niet goed ingeladen?
 
