@@ -38,7 +38,7 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 ![Preview](Images/Rest1.avif)
 
 *Zelf toe te voegen entiteiten op een dashboard.
-![Preview](Images/Rest2.avif) 
+![Preview](Images/Rest2.png) 
 
 ---
 
