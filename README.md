@@ -34,7 +34,7 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 ### #️⃣ Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
-2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
+2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen. [Klik hier](https://github.com/Gielz1986/Zendure-HA-zenSDK/blob/main/Configuration.yaml) voor de configuration.yaml van deze github.
 3. **Herstart Home Assistant**
 
 Na herstarten zie je onder integraties het onderstaande verschijnen.
