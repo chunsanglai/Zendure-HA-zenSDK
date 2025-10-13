@@ -218,7 +218,7 @@ series:
       });
 ```
 
-#### Apexcharts morgen
+#### ApexCharts morgen
 
 ```yaml
 type: custom:apexcharts-card
