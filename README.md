@@ -8,10 +8,6 @@ Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje ko
   <img src="https://github.com/Gielz1986/Zendure-zenSDK-HA/blob/main/Images/qr-code.png?raw=true" width="150" alt="Buy Me a Coffee">
 </a><br><br>
 
-
-
-![Preview](Images/NOM.gif)
-
 ## 📦 (1/3) Configuration.yaml
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
