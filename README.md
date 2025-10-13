@@ -16,7 +16,7 @@ Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje ko
 Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA). Hiervoor heb ik een bijna plug-n-play Configuration.yaml gemaakt.
 #### Benodigde hardware
 
-- Homewizard P1 (of een andere P1-meter die data per seconde levert)
+- Homewizard P1 (of een andere P1/CT-meter die data per seconde levert)
 - één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (zonder zonnepanelen)
 
 #### Vereiste gegevens
