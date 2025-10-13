@@ -4,6 +4,14 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 
 ![Preview](Images/NOM.gif)
 
+## ☕️ Support
+
+Vind je dit project tof en wil je me steunen? Trakteer me dan op een kopje koffie ☕️ – ik codeer beter met cafeïne!
+[![Buy Me a Coffee][buymecoffeebadge]][buymecoffee]
+
+[buymecoffee]: https://www.buymeacoffee.com/gielz
+[buymecoffeebadge]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
+
 
 ## 📦 (1/3) Configuratie van configuration.yaml
 
