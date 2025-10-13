@@ -14,18 +14,18 @@ Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje ko
 > ⚠️ Let op: Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
 Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA). Hiervoor heb ik een bijna plug-n-play Configuration.yaml gemaakt.
-#### Benodigde hardware
+#### ℹ️ Benodigde hardware
 
 - Homewizard P1 (of een andere P1/CT-meter die data per seconde levert)
 - één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (geen aangesloten zonnepanelen)
 
-#### Vereiste gegevens
+#### ℹ️ Vereiste gegevens
 
 | Variabele            | Waar te vinden                                 |
 |----------------------|------------------------------------------------|
-| `<IP-BATTERIJ>`      | In de Zendure app onder **Device Information** |
-| `<SERIAL-2400AC>`    | In de Zendure app onder **Device Information**  |
-| `<IP-HOMEWIZARD-P1>` | In de Homewizard app (lokale API **aanzetten**) |
+| `<IP-BATTERIJ>`      | In de Zendure app onder device Information |
+| `<SERIAL-2400AC>`    | In de Zendure app onder device Information  |
+| `<IP-HOMEWIZARD-P1>` | In de Homewizard app (lokale API aanzetten) |
 | `<NORDPOOL>         ` | Optioneel de eniteit van Nordpool toevoegen |
 
 ---
