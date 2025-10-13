@@ -14,11 +14,11 @@ Vind je dit project leuk en wil je mij steunen? Trakteer mij dan op een kopje ko
 
 > ⚠️ Let op: Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
-Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA). Hiervoor heb ik een bijna plug-n-play Configuration.yaml gemaakt.
+Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA). Hiervoor heb ik een bijna plug-n-play Configuration.yaml gemaakt.
 #### Benodigde hardware
 
 - Homewizard P1 (of een andere P1-meter die data per seconde levert)
-- Zendure Solarflow 2400 AC  
+- één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (zonder zonnepanelen)
 
 #### Vereiste gegevens
 
@@ -34,7 +34,7 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 ### #️⃣ Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
-2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen. [Klik hier](https://github.com/Gielz1986/Zendure-HA-zenSDK/blob/main/Configuration.yaml) voor de configuration.yaml van deze github.
+2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de github variant en vervang de `vereiste gegevens` zoals hierboven aangegeven.
 3. **Herstart Home Assistant**
 
 Na herstarten zie je onder integraties het onderstaande verschijnen.
