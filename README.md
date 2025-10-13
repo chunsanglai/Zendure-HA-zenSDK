@@ -5,7 +5,7 @@ Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze se
 ![Preview](Images/NOM.gif)
 
 
-## 📦 (1/3) Entiteiten configuratie in de configuration.yaml
+## 📦 (1/3) Configuratie van configuration.yaml
 
 > ⚠️ Zorg ervoor dat **HEMS is uitgeschakeld** in de Zendure-app.
 
