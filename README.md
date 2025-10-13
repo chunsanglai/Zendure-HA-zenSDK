@@ -2,16 +2,16 @@
 
 Gebaseerd op de [zenSDK van Zendure](https://github.com/Zendure/zenSDK). Deze setup maakt lokaal verbinding met **één** Zendure Solarflow 2400 AC batterij zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de batterij 100% lokaal in eigen beheer wilt zonder updates van derden.
 
-![Preview](Images/NOM.gif)
-
-## ☕️ Support
-
 Vind je dit project tof en wil je me steunen? Trakteer me dan op een kopje koffie ☕️ – ik codeer beter met cafeïne!
+
 [![Buy Me a Coffee][buymecoffeebadge]][buymecoffee]
 
 [buymecoffee]: https://www.buymeacoffee.com/gielz
 [buymecoffeebadge]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 
+
+
+![Preview](Images/NOM.gif)
 
 ## 📦 (1/3) Configuratie van configuration.yaml
 
@@ -341,4 +341,6 @@ series:
 
 
 ```
+
+
 
