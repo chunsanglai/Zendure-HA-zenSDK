@@ -34,7 +34,7 @@ Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA).
 ### #️⃣ Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
-2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de github variant en vervang de `vereiste gegevens` zoals hierboven aangegeven.
+2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de github variant en vervang de **vereiste gegevens** zoals hierboven aangegeven.
 3. Herstart Home Assistant
 4. Na herstarten zie je onder integraties het onderstaande verschijnen.
 
@@ -47,7 +47,7 @@ Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA).
 
 ### #️⃣ Testen
 
-Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Zendure`.
+Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar **Zendure**.
 
 1. Voer **Snel ontladen** uit  
    > ⚠️ Let op: 2400 watt. Respecteert ingestelde limieten uit de app.
@@ -58,7 +58,7 @@ Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Z
 
 ##### YAML niet goed ingeladen?
 
-Als je sensoren ziet maar geen `rest_commands`:  
+Als je sensoren ziet maar geen **rest_commands**:  
 > 🔁 Bug in Home Assistant – herstart meerdere keren totdat alles goed ingeladen is.
 
 <br><br>
@@ -70,7 +70,7 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 
 1. Maak een nieuwe automatisering aan
 2. Klik rechtsboven op **Bewerken in YAML**
-3. Plak de YAML-code (zie automatisering bestand)
+3. Plak de YAML-code `(zie automatisering bestand)`
 4. Sla op, en start de automatisering
 
 ![Preview](Images/Automation1.gif)   
@@ -97,247 +97,5 @@ input_text.dynamisch_handmatige_periode_morgen even unknown weghalen. Hierna zal
 
 Dynamisch Goedkoopste Periode en Dynamisch Duurste Periode geven JA en NEE aan. deze kun je vervolgens in je eigen automatisering gebruiken waarmee je de modus van de batterij veranderd.
 
-#### ApexCharts vandaag
-```yaml
-type: custom:apexcharts-card
-stacked: true
-header:
-  show: true
-  title: Vandaag
-experimental:
-  color_threshold: true
-graph_span: 24h
-apex_config:
-  plotOptions:
-    bar:
-      columnWidth: 90%
-  tooltip:
-    enabledOnSeries:
-      - 0
-    followCursor: true
-    shared: true
-    intersect: false
-    enabled: true
-    x:
-      format: HH:mm
-      show: false
-  grid:
-    show: true
-    borderColor: "#332f2c"
-    strokeDashArray: 0
-  chart:
-    height: 200px
-  yaxis:
-    - title:
-        text: ""
-      decimalsInFloat: 2
-      min: 0
-      max: 1
-      tickAmount: 5
-      forceNiceScale: false
-      labels:
-        style:
-          colors: "#7b7c83"
-  xaxis:
-    labels:
-      show: false
-    axisTicks:
-      show: false
-    axisBorder:
-      color: "#616269"
-  legend:
-    show: false
-span:
-  start: day
-series:
-  - entity: sensor.dynamisch_nordpool
-    yaxis_id: Prijs
-    type: column
-    color: "#ebebeb"
-    float_precision: 3
-    color_threshold:
-      - value: 0
-        color: "#186ddc"
-      - value: 0.155
-        color: "#04822e"
-      - value: 0.2
-        color: "#12A141"
-      - value: 0.25
-        color: "#79B92C"
-      - value: 0.3
-        color: "#C4D81D"
-      - value: 0.35
-        color: "#F3DC0C"
-      - value: 0.4
-        color: "#EFA51E"
-      - value: 0.45
-        color: "#E76821"
-      - value: 0.5
-        color: "#DC182F"
-    name: Vandaag
-    show:
-      in_header: false
-      legend_value: false
-      extremas: true
-    data_generator: |
-      return entity.attributes.raw_today.map((start, index) => {
-        return [new Date(start["start"]).getTime(), entity.attributes.raw_today[index]["value"]];
-      });
-  - entity: sensor.dynamisch_goedkoopste_periode
-    color: green
-    curve: stepline
-    opacity: 0.2
-    type: column
-    name: Goedkoop
-    data_generator: |
-      const data = entity.attributes["raw_today"];
-      if (!data) return [];
-
-      return data.map(item => {
-        const tijd = new Date(item.start).getTime();
-        const waarde = item.goedkoop === "ja" ? 1 : 0;
-        return [tijd, waarde];
-      });
-  - entity: sensor.dynamisch_goedkoopste_periode
-    color: red
-    curve: stepline
-    opacity: 0.2
-    type: column
-    name: Duur
-    data_generator: |
-      const data = entity.attributes["raw_today"];
-      if (!data) return [];
-
-      return data.map(item => {
-        const tijd = new Date(item.start).getTime();
-        const waarde = item.duur === "ja" ? 1 : 0;
-        return [tijd, waarde];
-      });
-```
-
-#### ApexCharts morgen
-
-```yaml
-type: custom:apexcharts-card
-stacked: true
-header:
-  show: true
-  title: Morgen
-experimental:
-  color_threshold: true
-graph_span: 24h
-apex_config:
-  noData:
-    text: Vanaf 14:00 zijn de prijzen van morgen bekend.
-  plotOptions:
-    bar:
-      columnWidth: 90%
-  tooltip:
-    enabledOnSeries:
-      - 0
-    followCursor: true
-    shared: true
-    intersect: false
-    enabled: true
-    x:
-      format: HH:mm
-      show: false
-  grid:
-    show: true
-    borderColor: "#332f2c"
-    strokeDashArray: 0
-  chart:
-    height: 200px
-  yaxis:
-    - title:
-        text: ""
-      decimalsInFloat: 2
-      min: 0
-      max: 1
-      tickAmount: 5
-      forceNiceScale: false
-      labels:
-        style:
-          colors: "#7b7c83"
-  xaxis:
-    labels:
-      show: false
-    axisTicks:
-      show: false
-    axisBorder:
-      color: "#616269"
-  legend:
-    show: false
-span:
-  start: day
-  offset: +1d
-series:
-  - entity: sensor.dynamisch_nordpool
-    yaxis_id: Prijs
-    type: column
-    color: "#ebebeb"
-    float_precision: 3
-    color_threshold:
-      - value: 0
-        color: "#186ddc"
-      - value: 0.155
-        color: "#04822e"
-      - value: 0.2
-        color: "#12A141"
-      - value: 0.25
-        color: "#79B92C"
-      - value: 0.3
-        color: "#C4D81D"
-      - value: 0.35
-        color: "#F3DC0C"
-      - value: 0.4
-        color: "#EFA51E"
-      - value: 0.45
-        color: "#E76821"
-      - value: 0.5
-        color: "#DC182F"
-    name: Morgen
-    show:
-      in_header: false
-      legend_value: false
-      extremas: true
-    data_generator: |
-      return entity.attributes.raw_tomorrow.map((start, index) => {
-        return [new Date(start["start"]).getTime(), entity.attributes.raw_tomorrow[index]["value"]];
-      });
-  - entity: sensor.dynamisch_goedkoopste_periode
-    color: green
-    curve: stepline
-    opacity: 0.2
-    type: column
-    name: Goedkoop
-    data_generator: |
-      const data = entity.attributes["raw_tomorrow"];
-      if (!data) return [];
-
-      return data.map(item => {
-        const tijd = new Date(item.start).getTime();
-        const waarde = item.goedkoop === "ja" ? 1 : 0;
-        return [tijd, waarde];
-      });
-  - entity: sensor.dynamisch_goedkoopste_periode
-    color: red
-    curve: stepline
-    opacity: 0.2
-    type: column
-    name: Duur
-    data_generator: |
-      const data = entity.attributes["raw_tomorrow"];
-      if (!data) return [];
-
-      return data.map(item => {
-        const tijd = new Date(item.start).getTime();
-        const waarde = item.duur === "ja" ? 1 : 0;
-        return [tijd, waarde];
-      });
-
-
-```
-
-
-
+### #️⃣ Apexcharts
+Je kunt om het visueel aantrekkelijk te maken de Apexcharts `Nordpool_Apexcharts_Vandaag` en `Nordpool_Apexcharts_Morgen` gebruiken `(zie Github bestanden)`
