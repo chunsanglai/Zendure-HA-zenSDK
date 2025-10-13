@@ -35,9 +35,8 @@ Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA).
 
 1. Maak eerst een **backup** van je `configuration.yaml`
 2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de github variant en vervang de `vereiste gegevens` zoals hierboven aangegeven.
-3. **Herstart Home Assistant**
-
-Na herstarten zie je onder integraties het onderstaande verschijnen.
+3. Herstart Home Assistant
+4. Na herstarten zie je onder integraties het onderstaande verschijnen.
 
 ![Preview](Images/Rest1.avif)
 
