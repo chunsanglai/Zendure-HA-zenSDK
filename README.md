@@ -24,8 +24,9 @@ Daarna gaan wij alles aanmaken voor de restful integratie (zit standaard in HA).
 | `<IP-HOMEWIZARD-P1>` | In de Homewizard app (lokale API **aanzetten**) |
 | `<NORDPOOL>         ` | Optioneel de eniteit van Nordpool toevoegen |
 
+---
 
-## 📦 (1a/3) Configuratie en herstart
+### 📦 (1a/3) Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
 2. Pas daarna je `configuration.yaml` aan door de vereiste gegevens in te vullen
@@ -38,9 +39,9 @@ Na herstarten zie je onder integraties het onderstaande verschijnen.
 *Zelf toe te voegen entiteiten op een dashboard.
 ![Preview](Images/Rest2.png) 
 
+---
 
-
-## 📦 (1b/3) Testen
+### 📦 (1b/3) Testen
 
 Ga naar **Ontwikkelhulpmiddelen** in Home Assistant. Zoek onder "Acties" naar `Zendure`.
 
