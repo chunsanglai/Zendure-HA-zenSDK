@@ -33,9 +33,9 @@ Daarna gaan wij alles aanmaken voor de RESTful integratie (zit standaard in HA).
 ### #️⃣ Configuratie en herstart
 
 1. Maak eerst een **backup** van je `configuration.yaml`
-2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de Github `configuration.yaml` en vervang de **vereiste gegevens** zoals hierboven aangegeven.
+2. Pas daarna je `configuration.yaml` aan door gebruik te maken van de Github `configuration.yaml` en vervang de **vereiste gegevens** zoals hierboven aangegeven
 3. Herstart Home Assistant
-4. Na herstarten zie je onder integraties het onderstaande verschijnen.
+4. Na herstarten zie je onder integraties het onderstaande verschijnen
 
 ![Preview](Images/Rest1.avif)
 
@@ -77,9 +77,10 @@ De motor van alles. Deze zal slim opladen en slim ontladen en samen dansen tot �
 <br><br>
 
 ## 3️⃣ Batterij mag aan de slag
+Het is dan eindelijk zo ver de batterij mag eens laten zien wat hij kan.
 
 1. Voeg de entiteit **Zendure 2400 AC Modus Selecteren** toe aan je dashboard
-2. Voeg eventueel andere entiteiten toe die je via `configuration.yaml` hebt aangemaakt
+2. Voeg eventueel andere entiteiten toe die je via de `configuration.yaml` hebt aangemaakt
 3. De modus zal op **Standby** staan
 4. Kies hier je gewenste modus om de **Zendure zenSDK (Gielz) automatisering** te activeren
 5. De batterij zal nu aan de slag gaan
