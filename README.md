@@ -1,5 +1,5 @@
 #  Zendure - Home Assistant
-**Zoveel mogelijk plug-n-play om in 3️⃣ stappen de batterij werkend te krijgen in Home Assistant**.
+**Om in 3️⃣ stappen je batterij werkend te krijgen in Home Assistant**.
 
 Gebaseerd op de [zenSDK RESTful API](https://github.com/Zendure/zenSDK) voor Home Assistant. Deze setup maakt lokaal verbinding met één Zendure Solarflow 2400 AC / Zendure Solarflow 800 Pro (geen aangesloten zonnepanelen) zonder gebruik te maken van integraties maar werkt met **één automatisering**. Voor de gene die graag de thuisbatterij 100% lokaal in eigen beheer wilt zonder updates van derden en netjes in Home Assistant.
 
