@@ -8,6 +8,7 @@ frontend:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+template: !include sensors.yaml
 
 input_select:
   zendure_2400_ac_modus_selecteren:
