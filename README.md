@@ -98,7 +98,7 @@ Dynamisch Goedkoopste Periode en Dynamisch Duurste Periode geven JA en NEE aan. 
 ### #️⃣ Apexcharts
 Je kunt om het visueel aantrekkelijk te maken de Apexcharts `Nordpool_Apexcharts_Vandaag` en `Nordpool_Apexcharts_Morgen` gebruiken `(zie Github bestanden)`
 
-### Slim laden met behulp van Dynamisch HA
+### 🔋 Slim laden met behulp van Dynamisch HA
 De toevoeging aan deze fork is dat binnen NOM, ook 'slim' laden gebruikt wordt. Hiervoor heb je wel Dynamisch HA nodig. Nieuwe sensor [dynamisch_goedkope_uren_nu] wordt aangemaakt en haalt op basis van NordPool + Dynamisch HA, een klein set aan data wat de goedkoopste momenten zijn. Aanpassingen aan [input_number.dynamisch_goedkoopste_x_periode] en [input_number.dynamisch_duurste_x_periode] hebben invloed op hoe vaak je laadt. 
 Je kunt het aanpassen op 15 minuten of 60 minuten (zie [input_boolean.dynamisch_15_minuten]). 
 Bron: https://github.com/Gielz1986/Dynamisch-HA
