@@ -102,3 +102,7 @@ Je kunt om het visueel aantrekkelijk te maken de Apexcharts `Nordpool_Apexcharts
 De toevoeging aan deze fork is dat binnen NOM, ook 'slim' laden gebruikt wordt. Hiervoor heb je wel Dynamisch HA nodig. Nieuwe sensor **dynamisch_goedkope_uren_nu** wordt aangemaakt en haalt op basis van NordPool + Dynamisch HA, een kleine set aan data wat de goedkoopste momenten zijn. Aanpassingen aan **input_number.dynamisch_goedkoopste_x_periode** en **input_number.dynamisch_duurste_x_periode** hebben invloed op hoe vaak je laadt. 
 Je kunt het aanpassen op 15 minuten of 60 minuten (zie **input_boolean.dynamisch_15_minuten**). 
 Bron: https://github.com/Gielz1986/Dynamisch-HA
+
+
+### EV laadsessie
+<LAADPAAL> is een sensor die je zelf moet aanvullen en aanpassen. Dit zorgt ervoor dat je thuisbatterij niet leeg wordt getrokken zodra de laadpaal bezig is.
