@@ -86,6 +86,34 @@ actions:
     choose:
       - conditions:
           - condition: state
+            entity_id: input_select.zendure_2400_ac_modus_selecteren
+            state: Nul op de meter
+          - condition: state
+            entity_id: binary_sensor.dynamisch_goedkope_uren_nu
+            state: "on"
+          - condition: numeric_state
+            entity_id: sensor.zendure_2400_ac_laadpercentage
+            below: 100
+        sequence:
+          - action: rest_command.zendure_snel_laden
+            data: {}
+        alias: Goedkoop uur → forceer laden (2400 W)
+      - conditions:
+          - condition: state
+            entity_id: input_select.zendure_2400_ac_modus_selecteren
+            state: Nul op de meter
+          - condition: state
+            entity_id: binary_sensor.dynamisch_goedkope_uren_nu
+            state: "off"
+          - condition: state
+            entity_id: sensor.zendure_2400_ac_modus
+            state: Opladen
+        sequence:
+          - action: rest_command.zendure_stop_met_alles
+            data: {}
+        alias: Einde goedkoop uur → stop geforceerd laden
+      - conditions:
+          - condition: state
             entity_id: sensor.zendure_2400_ac_opslagmodus
             state: Opslaan in Flash
           - condition: or
